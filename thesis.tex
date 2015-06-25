@@ -1,0 +1,53 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[french]{babel}
+\usepackage[authoryear, numbers]{natbib}
+\lhead[\rm\thepage]{\fancyplain{}{\sl{\rightmark}}}
+\rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
+
+
+
+
+
+\begin{document}
+\title  {Titre du papier}
+\author  {Thibault François }
+\maketitle
+%\lhead{\emph{Table des matières}}  % Set the left side page header to "Contents"
+\tableofcontents  % Write out the Table of Contents
+
+
+
+\input{./Chapters/Chapter0} % Sigle et Abréviation + Résumé + Introduction
+
+
+\input{./Chapters/Chapitre1}
+
+%\lhead{\emph{Conclusion}}
+%\input{./Chapters/Chapitre10}
+
+
+\label{Bibliographie}
+\lhead{\nouppercase{\leftmark}}
+\bibliographystyle{unsrtnat}  % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\bibliography{Bibliography} 
+
+
+
+%% ----------------------------------------------------------------
+% Now begin the Appendices, including them as separate files
+\part*{Annexes}
+\lhead{\nouppercase{\leftmark}}
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+%\input{./Appendices/AppendixA}	% Exigences
+
+
+
+
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+
+
+
+\end{document}
