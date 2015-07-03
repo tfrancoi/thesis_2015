@@ -3,6 +3,7 @@
 \usepackage{fancyhdr}
 \usepackage[french]{babel}
 \usepackage[authoryear, numbers]{natbib}
+\usepackage[final]{pdfpages} 
 \lhead[\rm\thepage]{\fancyplain{}{\sl{\rightmark}}}
 \rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
 
@@ -17,7 +18,16 @@
 %\lhead{\emph{Table des matières}}  % Set the left side page header to "Contents"
 \tableofcontents  % Write out the Table of Contents
 
+\chapter{Introduction}
+\chapter{Définition du contexte}
+\section{Structure le l'organisation}
+\section{Existant : les problèmes lié à l'existant, comment on veut les résoudre}
 
+\chapter{Elaboration du référentiel de compétence}
+\chapter{Comment évaluer les compétences}
+\chapter{Mise en oeuvre}
+\chapter{Conclusion}
+\section{Critique de la gestion des compétences et }
 
 \input{./Chapters/Chapter0} % Sigle et Abréviation + Résumé + Introduction
 
@@ -25,7 +35,6 @@
 \input{./Chapters/Chapitre1}
 
 %\lhead{\emph{Conclusion}}
-%\input{./Chapters/Chapitre10}
 
 
 \label{Bibliographie}
@@ -43,8 +52,8 @@
 
 %\input{./Appendices/AppendixA}	% Exigences
 
-
-
+\chapter{Odoo Appraisal Form}
+\includepdf[pages=1-6]{document/Odoo_appraisal.pdf}
 
 \addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
 
