@@ -1,9 +1,12 @@
 \documentclass[a4paper,10pt]{report}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
 \usepackage[french]{babel}
 \usepackage[authoryear, numbers]{natbib}
 \usepackage[final]{pdfpages} 
+\usepackage[unicode=true,hidelinks]{hyperref}
+\usepackage[babel=true]{csquotes}
 \lhead[\rm\thepage]{\fancyplain{}{\sl{\rightmark}}}
 \rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
 
@@ -18,28 +21,29 @@
 %\lhead{\emph{Table des matières}}  % Set the left side page header to "Contents"
 \tableofcontents  % Write out the Table of Contents
 
-\chapter{Introduction}
-\chapter{Définition du contexte}
-\section{Structure le l'organisation}
-\section{Existant : les problèmes lié à l'existant, comment on veut les résoudre}
+\input{./Chapters/Chapter0} 
+\input{./Chapters/Chapitre1} 
+\input{./Chapters/Chapitre2}
 
-\chapter{Elaboration du référentiel de compétence}
+\input{./Chapters/Chapitre3} 
 \chapter{Comment évaluer les compétences}
+L'évaluation des compétences est un domaine très vaste, qui implique la psychologie. Ce document ce contete d'effleurer la problèmatique. Il sera pourtant nécessaire d'explorer ce point pour une mise en pratique de la gestion des compétences. 
 \chapter{Mise en oeuvre}
 \chapter{Conclusion}
+Le travail accomplit ici pourrait facilement être répliqué pour le département de recherche et développement qui nécessite principalement des connaissance techniques pointues. Avec un travail plus poussé sur les compétences génériques, il pourrait aussi s'appliquer à l'équipe des consultants fonctionnels et l'ambition est bien là au sein d'Odoo pour faire ce travail. 
 \section{Critique de la gestion des compétences et }
 
-\input{./Chapters/Chapter0} % Sigle et Abréviation + Résumé + Introduction
 
 
-\input{./Chapters/Chapitre1}
+
+
 
 %\lhead{\emph{Conclusion}}
 
 
 \label{Bibliographie}
 \lhead{\nouppercase{\leftmark}}
-\bibliographystyle{unsrtnat}  % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\bibliographystyle{plain}  % Use the "unsrtnat" BibTeX style for formatting the Bibliography
 \bibliography{Bibliography} 
 
 
@@ -49,11 +53,10 @@
 \part*{Annexes}
 \lhead{\nouppercase{\leftmark}}
 \appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
-
-%\input{./Appendices/AppendixA}	% Exigences
-
+\input{./Chapters/Annex1}
 \chapter{Odoo Appraisal Form}
 \includepdf[pages=1-6]{document/Odoo_appraisal.pdf}
+
 
 \addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
 
