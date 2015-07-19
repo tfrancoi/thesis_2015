@@ -1,6 +1,6 @@
 \documentclass[a4paper,10pt]{report}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
 \usepackage[french]{babel}
 \usepackage[authoryear, numbers]{natbib}
@@ -9,10 +9,10 @@
 \usepackage[babel=true]{csquotes}
 \usepackage{epigraph}
 \usepackage{float}
+
 \restylefloat{table}
 \lhead[\rm\thepage]{\fancyplain{}{\sl{\rightmark}}}
 \rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
-
 
 
 
@@ -21,7 +21,7 @@
 \title  {Titre du papier}
 \author  {Thibault François }
 \maketitle
-%\lhead{\emph{Table des matières}}  % Set the left side page header to "Contents"
+
 \tableofcontents  % Write out the Table of Contents
 
 \input{./Chapters/Chapter0} 
@@ -30,17 +30,16 @@
 
 \input{./Chapters/Chapitre3} 
 
-%\chapter{Mise en oeuvre} Au cas ou je manque de page
 \chapter{Conclusion}
 Le travail accomplit ici pourrait facilement être répliqué pour le département de recherche et développement qui nécessite principalement des connaissance techniques pointues. Avec un travail plus poussé sur les compétences génériques, il pourrait aussi s'appliquer à l'équipe des consultants fonctionnels et l'ambition est bien là au sein d'Odoo pour faire ce travail. 
+
+Il faut noté qu'il y a un biais important dans la défintion des objectifs et la finalité de l'outils. L'initiative vient des acteurs de terrain et ceux-ci ont leur objectifs propres. L'outils devra surement évoluer si celui-ci veut s'adapter au besoin des ressources humaines ou à la hiérarchie. 
 \section{Critique de la gestion des compétences et }
 
 
 
 
 
-
-%\lhead{\emph{Conclusion}}
 
 
 \label{Bibliographie}
@@ -58,6 +57,7 @@ Le travail accomplit ici pourrait facilement être répliqué pour le départeme
 \input{./Chapters/Annex1}
 \chapter{Odoo Appraisal Form}
 \includepdf[pages=1-6]{document/Odoo_appraisal.pdf}
+\input{./Chapters/Annex3}
 
 
 \addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
