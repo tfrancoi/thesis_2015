@@ -1,70 +1,60 @@
+%TODO Page de garde : Done
+%TODO introduction
+%TODO conclusion
+%TODO retravail du chapitre 1 avec les objectifs stratégie cfr Johan
+%TODO Annex 4
+%TODO Relire et faire corriger.
+
 \documentclass[a4paper,10pt]{report}
 \usepackage[utf8]{inputenc}
-%\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{fancyhdr}
 \usepackage[french]{babel}
-\usepackage[authoryear, numbers]{natbib}
+\usepackage{natbib}
 \usepackage[final]{pdfpages} 
 \usepackage[unicode=true,hidelinks]{hyperref}
 \usepackage[babel=true]{csquotes}
 \usepackage{epigraph}
 \usepackage{float}
+\usepackage{tabularx}
 
 \restylefloat{table}
 \lhead[\rm\thepage]{\fancyplain{}{\sl{\rightmark}}}
 \rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
 
-
+\rmfamily
+\DeclareFontShape{T1}{lmr}{b}{sc}{<->ssub*cmr/bx/sc}{}
+\DeclareFontShape{T1}{lmr}{bx}{sc}{<->ssub*cmr/bx/sc}{}
+\renewcommand{\headrulewidth}{0pt}
 
 
 \begin{document}
-\title  {Titre du papier}
-\author  {Thibault François }
-\maketitle
+\input{./garde} 
 
 \tableofcontents  % Write out the Table of Contents
 
 \input{./Chapters/Chapter0} 
+\pagenumbering{arabic}
 \input{./Chapters/Chapitre1} 
 \input{./Chapters/Chapitre2}
-
 \input{./Chapters/Chapitre3} 
-
-\chapter{Conclusion}
-Le travail accomplit ici pourrait facilement être répliqué pour le département de recherche et développement qui nécessite principalement des connaissance techniques pointues. Avec un travail plus poussé sur les compétences génériques, il pourrait aussi s'appliquer à l'équipe des consultants fonctionnels et l'ambition est bien là au sein d'Odoo pour faire ce travail. 
-
-Il faut noté qu'il y a un biais important dans la défintion des objectifs et la finalité de l'outils. L'initiative vient des acteurs de terrain et ceux-ci ont leur objectifs propres. L'outils devra surement évoluer si celui-ci veut s'adapter au besoin des ressources humaines ou à la hiérarchie. 
-
-Dans le troisième chapitre nous n'avons fait qu'effleuré la mise au point d'un référentiel.
-\section{Critique de la gestion des compétences et }
-
-
-
-
-
+\input{./Chapters/Conclusion}
 
 
 \label{Bibliographie}
-\lhead{\nouppercase{\leftmark}}
 \bibliographystyle{plain}  % Use the "unsrtnat" BibTeX style for formatting the Bibliography
 \bibliography{Bibliography} 
 
 
 
-%% ----------------------------------------------------------------
 % Now begin the Appendices, including them as separate files
 \part*{Annexes}
-\lhead{\nouppercase{\leftmark}}
-\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
-\input{./Chapters/Annex1}
-\chapter{Odoo Appraisal Form}
-\includepdf[pages=1-6]{document/Odoo_appraisal.pdf}
-\input{./Chapters/Annex3}
-\input{./Chapters/Annex4}
-
-
-\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
-
+\appendix
+\input{./Appendices/Annex1}
+\input{./Appendices/Annex2}
+\input{./Appendices/Annex3}
+\input{./Appendices/Annex4}
 
 
 \end{document}
