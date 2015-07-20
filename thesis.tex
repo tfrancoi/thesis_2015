@@ -5,7 +5,7 @@
 %TODO Annex 4
 %TODO Relire et faire corriger.
 
-\documentclass[a4paper,10pt]{report}
+\documentclass[a4paper,11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -18,15 +18,18 @@
 \usepackage{epigraph}
 \usepackage{float}
 \usepackage{tabularx}
-
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{fancy}
 \restylefloat{table}
-\lhead[\rm\thepage]{\fancyplain{}{\sl{\rightmark}}}
-\rhead[\fancyplain{}{\sl{\leftmark}}]{\rm\thepage}
+\lhead{}
+\rhead{\thepage.}
+\cfoot{}
 
 \rmfamily
 \DeclareFontShape{T1}{lmr}{b}{sc}{<->ssub*cmr/bx/sc}{}
 \DeclareFontShape{T1}{lmr}{bx}{sc}{<->ssub*cmr/bx/sc}{}
 \renewcommand{\headrulewidth}{0pt}
+\renewcommand{\baselinestretch}{1.2}
 
 
 \begin{document}
