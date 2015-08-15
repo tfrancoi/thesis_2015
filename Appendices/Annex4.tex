@@ -3,7 +3,7 @@
 \section{Processus à analyser}
 \begin{description}
   \item[Projet]
-  Gestion de projet du point de vue de l'équipes techniques, de l'analyse technique à la maintenance en passant par les développement et les tests. L'un des processus les plus complexe à gérer mais aussi l'un des mieux maitriser et mieux documenter
+  Gestion de projet du point de vue de l’équipe technique, de l'analyse technique à la maintenance en passant par les développements et les tests. L'un des processus les plus complexes à gérer mais aussi l'un des mieux maitriser et mieux documenter
   \item[Support Technique]
   Le processus est en soit assez simple mais relève de cas le plus souvent complexe et inédit. Il nécessite beaucoup d'ingéniosité mais aussi beaucoup de tact.
   \item[Formation]
@@ -13,29 +13,32 @@
   \item[Développement Saas] 
   Ce processus est le plus simple et est assez bien maitrisé. Mais les possibilités limités de l'environnement nécessite pas mal de créativité.
   \item[Avant-vente]
-  Malgré ces aspects l'avant-vente est un des processus les plus avancés, il nécessite généralement de bien maitrisé tout les autres mais il faut en plus maitrisé des apsects humains et tenir compte de considération économique.
+  Malgré ces aspects l'avant-vente est un des processus les plus avancés, il nécessite généralement de bien maitrisé tous les autres mais il faut en plus maitriser des aspects humains et tenir compte de considération économique.
   \item[Administration de l'infrastructure]
-  Processus clairement définit mais qui nécessite des compétences très différent de tout les autres. 
+  Processus clairement définit mais qui nécessite des compétences très différentes de toutes les autres. 
 \end{description}
 
 
 \section{Analyse des tâches du processus: Projet}
 \begin{description}
-    \item[Développement Backend]
-    Cette tâche requiert beaucoup de compétence. D'abord des compétences analytiques. Il faut comprendre la spécification fonctionnelle, l'analyser pour pouvoir la modéliser. Il faut ensuit pouvoir écrire le code, le tester et le delivrer. 
-    L'écriture du code demande des connaissance du langage python, du framework odoo, du langage xml et qweb
+    \item[Développement backend]
+    Cette tâche consiste le coeur de l'activité de l'équipe, il faut traduire les spécifications fonctionnelles en module Odoo. Les modules sont écrits en Python et en Xml. Cette tâche requiert beaucoup de compétence. D'abord des compétences analytiques. Il faut comprendre la spécification fonctionnelle, l'analyser pour pouvoir la modéliser. Il faut ensuite pouvoir écrire le code, le tester et le délivrer. L'écriture du code demande des connaissances du langage python, du Framework Odoo, du langage xml et qweb. Pour tester sont codes, ils pouvoir construire des scénarios représentatifs de la réalité et tester les cas limites susceptible d'arriver. Pour délivrer le code, il faut connaître les procédures de la gestion du projet et le système de gestion des sources : git. 
     \item[Analyse Technique, estimation et faisabilité]
-    Cette tâche nécessite des connaissance technique assez générale pour identifier la partie spécifique qui sera impacter par les demandes des clients. Esnuites en fonction du domaine, cette tâche requiert les même compétences que le développement backend ou frond end. Il faut aussi connaitre toutes les phases nécessaire à la production de la fonctionnalité 
+    Cette tâche consiste à vérifier que les spécifications fonctionnelles sont réalisable techniquement et en combien de temps. Pour cela, il faut déjà pouvoir se faire une idée de la manière de réaliser la spécification pour pouvoir estimer les temps nécessaire à sa réalisation. Cette tâche nécessite des connaissances techniques assez générales pour identifier la partie spécifique qui sera impacter par les demandes des clients. Ensuite en fonction du domaine, cette tâche requiert les mêmes compétences que le développement backend ou frond end. Il faut aussi connaitre toutes les phases nécessaires à la production de la fonctionnalité. Une connaissance du domaine fonctionnelle en question permet de challenger la spécification et de pouvoir parfois proposer une meilleure solution. 
     \item[Test fonctionnel]
-    La tâche de test fonctionnelle nécessite de connaitre et de comprendre les spécifications fonctionnelles de la fonctionnalité implémentée. Il faut être capabable de concevoir des scénarios généraux mais aussi les scénarios limites à tester. Finalement, il faut être capable de mettre en pratique les scénarios de tests. 
+    Cette tâche n'est pas effectuée par l'équipe technique mais elle peut l'être. Elle consiste à tester manuellement un développement pour vérifier que celui-ci correspond bien à la spécification fonctionnelle et qu'aucune erreur n'est rencontrée. La tâche de test fonctionnelle nécessite de connaitre et de comprendre les spécifications fonctionnelles de la fonctionnalité implémentée. Il faut être capable de concevoir des scénarios généraux mais aussi les scénarios limites à tester. Finalement, il faut être capable de mettre en pratique les scénarios de tests. 
     \item[Test automatique backend]
-    Cette tâche est fort similaire à la précédente, elle nécessite de comprendre les spécifications mais aussi le code, de concevoir des scénarios de test et ensuite de les implémenter dans le framework de test Odoo. 
+    
+    Cette tâche est fort similaire à la précédente à la différence qu'il faut écrire en code les scénarios de test pour que ceux-ci puisse être lancé et s'exécuter automatiquement, elle nécessite de comprendre les spécifications mais aussi le code, de concevoir des scénarios de test et ensuite de les implémenter dans le framework de test Odoo. 
     \item[Revue de la qualité du code]
-    L'objectif de cette tâche est de ce prononcer sur la qualité du code écrit. Est-il lisible, répond-il à la spécification, est-il performant et robuste et ensuite de donner un feedback constructif à la personne qui a écrit le code. Cette tâche est l'une des plus complexe et les plus complètes. Elle nécessite des très bonne connaissance des langages qui sont impliqués dans le code à reviewer, du framework odoo pour pouvoir proposer de meilleur solution que celles utilisées. Il faut pouvoir se construire une image globale du code en lisant ligne par ligne. Finalement, il faut une certain tact pour exprimer son feedback. 
-    \item[Odoo Deployement] Cette tâche consiste à déployer odoo sur un serveur avec tout le code nécessaire 
+    L'objectif de cette tâche est de se prononcer sur la qualité du code écrit. Est-il lisible, répond-il à la spécification, est-il performant et robuste et ensuite de donner un feedback constructif à la personne qui a écrit le code. Cette tâche est l'une des plus complexes et les plus complètes. Elle nécessite des très bonnes connaissances des langages qui sont impliqués dans le code à reviewer, du framework Odoo pour pouvoir proposer de meilleures solutions que celles utilisées. Il faut pouvoir se construire une image globale du code en lisant ligne par ligne. Finalement, il faut un certain tact pour exprimer son feedback. Il faut aussi avoir intériorisé les recommandations de codage d'Odoo (Odoo guidelines) pour vérifier que celle-ci sont respectées. 
+    \item[Déploiement d'Odoo] Cette tâche consiste à déployer Odoo sur un serveur avec tout le code nécessaire, de paramétrer correctement tous les composants du déploiement. 
+    Cette tâche requiert des connaissances très différentes des précédentes. Il faut savoir utiliser le système d'exploitation Linux en ligne de commande, être capable d'installer les dépendances d'Odoo, d'installer et paramétrer Postgresql. Il faut aussi maitriser git et le paramétrage d'Odoo. 
 \end{description}
 
 \subsection{Tâches non détaillées dans cette annexe}
+
+
 \begin{itemize}
  \item Test automatique frontend
  \item Développement Front end
@@ -47,28 +50,34 @@
  \item Documentation Technique
  \item Documentation Fonctionnelle
  \item Support
- \item Version Migration
- \item Data Migration
- \item Intégration
+ \item Migration de version 
+ \item Migration des données existantes
+ \item Intégration du code
 \end{itemize}
+
 
 \section{Description de compétence}
+Voici la liste des compétences dérivées des tâches qui ont été détaillées dans la section précédente. 
 \subsubsection{Savoir programmer en python}
-La connaissance du parfait d'un langage est un travail de plusieurs année, mais ce n'est pas ce qui est demandé. Il faut pouvoir manipulé les principales structures de donnée, comprendre la documentation et être capable d'utiliser les bibliothèques nécessaires au développement après en avoir lu la documentation. 
-\subsubsection{Connaitre et appliquer les guidelines odoo en programmation}
+La connaissance du parfait d'un langage est un travail de plusieurs années, mais ce n'est pas ce qui est demandé. Il faut pouvoir manipuler les principales structures de donnée, comprendre la documentation et être capable d'utiliser les bibliothèques nécessaires au développement après en avoir lu la documentation. 
 
 
 
-\subsubsection{Connaître et pouvoir utiliser le framework Odoo pourla crétation/modification de module}
-\begin{itemize}
- \item Les vues les plus courantes: Form, Tree, Search, Kanban, Graph, Pivot
- \item Connaître la syntaxe de qweb
-\end{itemize}
-\subsubsection{Savoir implémenter des tests automatisés pour le backend par rapport au périmètre de son propre code}
-Cette compétence nécessite de connaître le python et le framework Odoo en plus de cela il faut connaître le frameword unittest2 ainsi que sont implémentation dans Odoo. Il faut être capable de détecter les cas limites qui valent la peine d'être testés. L'utilisation de l'outils coverage est un plus. 
+
+\subsubsection{Connaître et pouvoir utiliser le framework Odoo}
+Il faut savoir appliquer le contenu de la formation technique. Connaitre tous les types de champs, de vues. Connaitre comment implémenter des wizards, l'écriture de rapports dynamique. 
+Il faut savoir comment rendre les formulaires dynamique, ajouter des contraintes au système. Cette compétences peux encore se découper en plusieurs sous compétences. 
+\subsubsection{Être capable de concevoir des scénarios de tests sur base de spécifications}
+Ici, il est important de comprendre la spécification pour concevoir des tests qui permettent de s'assurer que le système sera fonctionnel une fois que les utilisateurs vont l'utiliser réellement. 
+\subsubsection{Savoir implémenter des scénarios de tests pour les automatiser dans le backend}
+Cette compétence nécessite de connaître le python et le framework Odoo en plus de cela il faut connaître le frameword unittest2 ainsi que sont implémentation dans Odoo. L'utilisation de l’outil coverage est un plus. 
 
 \subsubsection{Savoir écrire des requête SQL}
-Pouvoir écrite des requête de sélection de donnée, de création, de mise à jours et de suppression. Pouvoir effectuer des jointure entre les tables. 
+Pouvoir écrite des requête de sélection de donnée, de création, de mise à jours et de suppression. Pouvoir effectuer des jointures entre les tables. 
+
+
+\subsubsection{Être capable de découper un problème en plusieurs sous problème}
+Ceci est particulièrement utile en programmation. Il faut pouvoir découper un problème un plusieurs petit problème jusqu'à ce que le sous-problème puisse directement s'exprimer dans le langage de programmation utilisé. 
 \subsubsection{Compréhension fonctionnelle d'un module métier}
 Avoir une compréhension fonctionnelle d'un module métier consiste à connaître son but, avoir fait l'expérience d'un cas concret d'implémentation du module, de pouvoir le configurer et de connaitre ses principales fonctionnalités. On peut citer les principaux modules:
 \begin{itemize}
@@ -86,35 +95,42 @@ Avoir une compréhension fonctionnelle d'un module métier consiste à connaîtr
  \item Website
  \item E-commerce
 \end{itemize}
-\subsubsection{Comprendre et analyser les besoins métier du client}
-\subsubsection{Pouvoir modéliser les besoins du client en termes d'objets et d'interaction entre les objets.}
- - Traduie les demandes des clients en spécification techniques
-\subsubsection{Être capable de découper un problème en plusieurs sous problème}
 
 
-\subsubsection{Être capabable de déployer et d'administrer Odoo}
 
 \subsection{Compétence non détaillées dans cette annexe}
 \begin{itemize}
+ \item Connaitre et appliquer les guidelines odoo en programmation
  \item Savoir Programmer en javascript
  \item Savoir Programmer en bash
- \item Savoir écrire des fichier xml odoo et des vues backend
+ \item Savoir écrire des fichiers xml odoo et des vues backend
  \item Savoir écrire des vues qweb
- \item Être capabable d'administrer un serveur Postgresql
- \item Être capabable d'administrer un serveur linux
+ \item Être capable d'administrer un serveur Postgresql
+ \item Être capable d'administrer un serveur linux
  \item Pouvoir adapter son discours en fonction de son interlocuteur
+ \item Être capable d'utiliser l'outil de gestion de sources git
+ \item Connaître et appliquer les procédures mis en place pour la bonne marche du projet
+ \item Être capable de communique de manière sereine et constructive son feedback
+ \item Être capable d'estimer le temps nécessaire à une tâche de programmation
+ \item Pouvoir lire et comprendre le code d'autrui et pouvoir en extraire le sens
+ \item Être capable de déployer et d'administrer Odoo
+ \item Être capable de traduire les spécifications dans un modèle technique et d'en découler les tâches techniques à réaliser
  
 \end{itemize}
 
 
 \section{Exemple de socle de base}
+On pourrait imaginer un socle de base qui requiert de pouvoir effectuer les tâches suivantes de manière autonome : développement backend; test fonctionnel; Test automatique backend; déploiement d'Odoo.
+Il faudrait pour cela avoir une maitrise de niveau 3 des compétences suivantes. 
 \begin{itemize}
+ \item Être capable de traduire les spécifications dans un modèle technique et d'en découler les tâches techniques à réaliser
  \item Être capable de découper un problème en plusieurs sous problème
  \item Savoir programmer en python
- \item Être capabable de déployer et d'administrer Odoo
- \item Connaître et pouvoir utiliser le framework Odoo pourla crétation/modification de module
- \item Connaitre et appliquer les guidelines odoo en programmation
- \item Savoir implémenter des tests automatisés pour le backend par rapport au périmètre de son propre code
+ \item Connaître et pouvoir utiliser le framework Odoo
+ \item Savoir écrire des fichiers xml odoo et des vues backend
+ \item Être capable de déployer et d'administrer Odoo
+ \item Savoir implémenter des scénarios de tests pour les automatiser dans le backend
+ \item Être capable de concevoir des scénarios de tests sur base de spécifications
  \item Compréhension fonctionnelle de 2 modules
 \end{itemize}
 
@@ -128,11 +144,11 @@ Avoir une compréhension fonctionnelle d'un module métier consiste à connaîtr
  \item Être capable créer des nouveaux modules
  \item Savoir programmer en python
  \item Savoir écrire des requête SQL
- \item Savoir écrire des fichier xml odoo et des vues backend
+ \item Savoir écrire des fichiers xml odoo et des vues backend
  \item Connaitre les outils de débogage python
  \item Savoir implémenter des tests automatisés pour le backend par rapport au périmètre de son propre code
  \item Connaitre les guideline de développement Odoo
- \item Connaissance de git: branche, tag, merge, diff, stash, checkout, clone
+ \item Connaissance de git
  \item Connaissance technique des modules de base: Base, Email
 
 \end{itemize}
