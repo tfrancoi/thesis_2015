@@ -4,17 +4,20 @@
 \usepackage{lmodern}
 \usepackage{fancyhdr}
 \usepackage[french]{babel}
-\usepackage{natbib}
+\usepackage[square,sort,comma,numbers]{natbib}
 \usepackage[final]{pdfpages} 
 \usepackage[unicode=true,hidelinks]{hyperref}
 \usepackage[babel=true]{csquotes}
 \usepackage{float}
 \usepackage{tabularx}
 \usepackage{titlesec}
-\usepackage[left=2.5cm,right=2.5cm,top=4cm,bottom=4cm]{geometry}
+\usepackage{eurosym}
+%\usepackage{fontspec}
+%\setmainfont{Cambria}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
 %\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \titleformat{\chapter}{\normalfont\huge}{\textbf{\thechapter.}}{20pt}{\huge\bfseries}
-\titlespacing{\chapter}{0pt}{*-3}{*5}
+%\titlespacing{\chapter}{0pt}{*-5}{*5}
 \pagestyle{fancy}
 \restylefloat{table}
 
@@ -32,16 +35,7 @@
 \begin{document}
 \pagenumbering{gobble}
 \input{./garde} 
-\newpage
 
-\hfill\begin{minipage}[c]{0.65\textwidth}
-
-\vspace{5cm}
-\section*{Remerciements}
-Nous tenons à remercier les personnes suivantes qui ont aidé à la réalisation de ce travail. \\ 
-
-Tout d'abord, le professeur Eric Cornuel pour son encadrement, mos correcteurs pour leur patience et leur minutie.
-\end{minipage} 
 \newpage
 
 \tableofcontents  % Write out the Table of Contents
@@ -52,6 +46,8 @@ Tout d'abord, le professeur Eric Cornuel pour son encadrement, mos correcteurs p
 \input{./Chapters/Chapitre1} 
 \input{./Chapters/Chapitre2} 
 \input{./Chapters/Chapitre3} 
+\input{./Chapters/Chapitre4} 
+\input{./Chapters/Chapitre5} 
 \input{./Chapters/Conclusion}
 
 
@@ -62,9 +58,9 @@ Tout d'abord, le professeur Eric Cornuel pour son encadrement, mos correcteurs p
 
 
 % Now begin the Appendices, including them as separate files
-%\part*{Annexes}
-%\appendix
-%\input{./Appendices/Annex1}
+\part*{Annexes}
+\appendix
+\input{./Appendices/Annex1}
 
 
 
